@@ -9,14 +9,23 @@ namespace Task
             if (args.Length == 0)
             {
                 Console.WriteLine("Please provide a sequence of symbols");
+
                 string input = Console.ReadLine();
+
                 TestProgram program = new TestProgram();
+
                 int maxConsecutiveUnequalCharacters = program.GetMaxConsecutiveUnequalCharacters(input);
+
                 int maxConsecutiveIdenticalLatinLetters = program.MaxConsecutiveIdenticalLatinLetters(input);
+
                 int maxConsecutiveIdenticalDigit = program.MaxConsecutiveIdenticalDigits(input);
+
                 Console.WriteLine("Input: {0}", input);
+
                 Console.WriteLine("Maximum Consecutive Unequal Characters: {0}", maxConsecutiveUnequalCharacters);
+
                 Console.WriteLine("Maximum Consecutive Identical Latin Letters: {0}", maxConsecutiveIdenticalLatinLetters);
+
                 Console.WriteLine("Maximum Consecutive Identical Digits: {0}", maxConsecutiveIdenticalDigit);
                 Console.WriteLine();
             }
@@ -62,8 +71,8 @@ namespace Task
                 return 0;
             }
 
-            int maxConsecutive = 1;
-            int currentConsecutive = 1;
+            int maxConsecutive = 0;
+            int currentConsecutive = 0;
 
             for (int i = 1; i < input.Length; i++)
             {
