@@ -24,9 +24,7 @@ namespace Task
             {
                 Console.WriteLine("Please provide input via command-line arguments.");
             }
-        }
-
-        
+        }        
 
         public int GetMaxConsecutiveUnequalCharacters(string input)
         {
