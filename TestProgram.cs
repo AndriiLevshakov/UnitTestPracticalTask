@@ -71,8 +71,8 @@ namespace Task
                 return 0;
             }
 
-            int maxConsecutive = 0;
-            int currentConsecutive = 0;
+            int maxConsecutive = 1;
+            int currentConsecutive = 1;
 
             for (int i = 1; i < input.Length; i++)
             {
